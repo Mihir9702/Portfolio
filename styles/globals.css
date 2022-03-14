@@ -2,13 +2,24 @@ html,
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  position: relative;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+*::-web-kit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 * {
