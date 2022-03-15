@@ -13,12 +13,11 @@ const Home: NextPage = () => {
 
       <div className={styles.container}>
         <header className={styles.header}>
-          <div className={styles.fstar}></div>
-          <div className={styles.mstar}></div>
-          <div className={styles.bstar}>backstars</div>
-          <div>
-            e<div>eland</div>
-            <div>eclouds</div>
+          <div className={styles.fstar} />
+          <div className={styles.mstar} />
+          <div className={styles.bstar} />
+          <div className={styles.titleContainer}>
+            <h1 className={styles.title}>Mihir</h1>
           </div>
         </header>
       </div>

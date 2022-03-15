@@ -1,5 +1,10 @@
 @import 'Home.keyframes.scss';
 
+$white: #fff;
+$black: #090a0f;
+$dark: #1b2735;
+$blue: #22a7f0;
+
 .container {
   width: 100%;
   overflow: hidden;
@@ -7,7 +12,7 @@
 
 .header {
   position: relative;
-  background: radial-gradient(ellipse at bottom, #1b2735, 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, $dark, 0%, $black 100%);
   height: 100vh;
   width: 100%;
 }
@@ -77,4 +82,18 @@ $shadows-lg: multipleBoxShadow(100);
     background: transparent;
     box-shadow: $shadows-lg;
   }
+}
+
+.titleContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: white;
+  z-index: 1;
 }
