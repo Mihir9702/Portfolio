@@ -3,6 +3,7 @@
 $white: #fff;
 $black: #090a0f;
 $dark: #1b2735;
+$sun: hsl(20, 75%, 55%);
 $blue: #22a7f0;
 
 .container {
@@ -88,7 +89,7 @@ $shadows-lg: multipleBoxShadow(100);
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
 }
@@ -96,4 +97,43 @@ $shadows-lg: multipleBoxShadow(100);
 .title {
   color: white;
   z-index: 1;
+  font-size: 3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  text-shadow: 0 4px 4px;
+}
+
+.section {
+  position: absolute;
+  transform-style: preserve-3d;
+  z-index: 0;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+
+  .sun {
+    width: 150px;
+    height: 150px;
+    user-select: none;
+    cursor: pointer;
+    background-image: url('../public/2k_sun.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px $sun;
+    animation: rotatePlanet 10s linear infinite;
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@keyframes rotatePlanet {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -375px -350px;
+  }
 }
