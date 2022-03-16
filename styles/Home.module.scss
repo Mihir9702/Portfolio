@@ -1,106 +1,14 @@
 @import 'Home.keyframes.scss';
 
 $white: #fff;
-$black: #090a0f;
-$dark: #1b2735;
 $sun: hsl(20, 75%, 55%);
 $blue: #22a7f0;
+$font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+  Arial, sans-serif;
 
 .container {
   width: 100%;
   overflow: hidden;
-}
-
-.header {
-  position: relative;
-  background: radial-gradient(ellipse at bottom, $dark, 0%, $black 100%);
-  height: 100vh;
-  width: 100%;
-}
-
-@function multipleBoxShadow($n) {
-  $value: '#{random(2000)}px #{random(2000)}px #FFF';
-  @for $i from 2 through $n {
-    $value: '#{$value}, #{random(5000)}px #{random(5000)}px #FFF';
-  }
-
-  @return unquote($value);
-}
-
-$shadows-sm: multipleBoxShadow(700);
-$shadows-md: multipleBoxShadow(200);
-$shadows-lg: multipleBoxShadow(100);
-
-.fstar {
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: $shadows-sm;
-  animation: animStar 50s linear infinite;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 2000px;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: $shadows-sm;
-  }
-}
-
-.mstar {
-  width: 2px;
-  height: 2px;
-  background: transparent;
-  box-shadow: $shadows-md;
-  animation: animStar 100s linear infinite;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 2000px;
-    width: 2px;
-    height: 2px;
-    background: transparent;
-    box-shadow: $shadows-md;
-  }
-}
-
-.bstar {
-  width: 3px;
-  height: 3px;
-  background: transparent;
-  box-shadow: $shadows-lg;
-  animation: animStar 150s linear infinite;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 2000px;
-    width: 3px;
-    height: 3px;
-    background: transparent;
-    box-shadow: $shadows-lg;
-  }
-}
-
-.titleContainer {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  height: 100%;
-}
-
-.title {
-  color: white;
-  z-index: 1;
-  font-size: 3rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  text-shadow: 0 4px 4px;
 }
 
 .section {
@@ -109,6 +17,17 @@ $shadows-lg: multipleBoxShadow(100);
   z-index: 0;
   top: calc(50vh - 75px);
   left: calc(50vw - 75px);
+
+  &::before {
+    content: 'Home';
+    position: relative;
+    color: white;
+    display: flex;
+    font-size: 1.25rem;
+    font-family: $font;
+    justify-content: center;
+    padding-bottom: 1em;
+  }
 
   .sun {
     width: 150px;
@@ -125,15 +44,5 @@ $shadows-lg: multipleBoxShadow(100);
     &:hover {
       transform: scale(1.2);
     }
-  }
-}
-
-@keyframes rotatePlanet {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: -375px -350px;
   }
 }
