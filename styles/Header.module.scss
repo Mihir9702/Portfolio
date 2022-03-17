@@ -1,4 +1,5 @@
 @import 'Home.keyframes.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 @function multipleBoxShadow($n) {
   $value: '#{random(2000)}px #{random(2000)}px #FFF';
@@ -21,6 +22,7 @@ $shadows-lg: multipleBoxShadow(100);
   background: radial-gradient(ellipse at bottom, $dark, 0%, $black 100%);
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .fstar {
@@ -81,19 +83,26 @@ $shadows-lg: multipleBoxShadow(100);
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   height: 100%;
-}
 
-.title {
-  $font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
-    Arial, sans-serif;
+  $blue: #22a7f0;
+  .title {
+    $font: 'Fredoka One', cursive;
 
-  color: white;
-  z-index: 1;
-  font-size: 3rem;
-  font-family: $font;
-  text-shadow: 0 4px 4px;
-  user-select: none;
+    color: $blue;
+    font-size: 5rem;
+    font-family: $font;
+    letter-spacing: 0.25rem;
+    transform: rotate(10deg) skew(10deg);
+    transition: transform 200ms ease-in-out;
+    text-shadow: 0 4px 5px;
+    user-select: none;
+
+    &:hover {
+      color: white;
+      transform: rotate(-10deg);
+    }
+  }
 }

@@ -2,14 +2,6 @@
 
 $white: #fff;
 $sun: hsl(20, 75%, 55%);
-$blue: #22a7f0;
-$font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
-  Arial, sans-serif;
-
-.container {
-  width: 100%;
-  overflow: hidden;
-}
 
 .section {
   position: absolute;
@@ -17,32 +9,60 @@ $font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
   z-index: 0;
   top: calc(50vh - 75px);
   left: calc(50vw - 75px);
+}
 
-  &::before {
-    content: 'Home';
-    position: relative;
+.nav {
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 3vh;
+    right: 0;
     color: white;
     display: flex;
-    font-size: 1.25rem;
-    font-family: $font;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 1em;
-  }
-
-  .sun {
-    width: 150px;
-    height: 150px;
-    user-select: none;
+    align-items: center;
     cursor: pointer;
-    background-image: url('../public/2k_sun.jpg');
-    background-size: cover;
-    border-radius: 50%;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px $sun;
-    animation: rotatePlanet 10s linear infinite;
-    transition: transform 200ms ease-in-out;
 
-    &:hover {
-      transform: scale(1.2);
+    &::before {
+      content: '\039e';
+      font-size: 2rem;
+      position: inherit;
+      right: 0 + 2vw;
+    }
+
+    ul {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      width: 100vw;
+      transform: translate(-50%);
+      align-items: center;
+      text-align: center;
+      top: 0;
+      gap: 1rem;
+      font-size: larger;
+      z-index: 1;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      list-style-type: none;
+
+      li {
+        $bg: #112d78;
+        background-color: hsl(260, 80%, 5%);
+        box-shadow: inset 0 4px 18px $bg;
+        padding: 0.5em;
+        width: 80%;
+        transform: translate(-5%);
+        transition: box-shadow 200ms ease-in;
+        user-select: none;
+        cursor: pointer;
+
+        &:hover,
+        &:active,
+        &:focus {
+          box-shadow: inset 0 4px 18px 20px $bg;
+        }
+      }
     }
   }
 }

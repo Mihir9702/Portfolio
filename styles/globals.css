@@ -8,15 +8,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-*::-web-kit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
+::-web-kit-scrollbar {
+  display: none;
 }
 
 a {
