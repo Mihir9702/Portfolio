@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <Header />
       <nav className={styles.nav} onClick={() => setDisplay(!display)}>
         {display ? false : <MobileNavItems />}
-        {/* <MobileNavItems /> */}
+        
       </nav>
     </>
   )

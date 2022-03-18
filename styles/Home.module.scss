@@ -57,6 +57,10 @@ $sun: hsl(20, 75%, 55%);
         user-select: none;
         cursor: pointer;
 
+        a {
+          text-decoration: none;
+        }
+
         &:hover,
         &:active,
         &:focus {
