@@ -1,13 +1,8 @@
-import { useState } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../src/components/Header'
-import styles from '../styles/Home.module.scss'
-import MobileNavItems from '../src/components/MobileNavItems'
 
 const Home: NextPage = () => {
-  const [display, setDisplay] = useState(true)
-
   return (
     <>
       <Head>
@@ -16,10 +11,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <nav className={styles.nav} onClick={() => setDisplay(!display)}>
-        {display ? false : <MobileNavItems />}
-        
-      </nav>
     </>
   )
 }
