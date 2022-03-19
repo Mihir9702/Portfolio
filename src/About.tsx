@@ -1,8 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
 import city from '../public/city.jpg'
+import Card from './Card'
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <section className="bg-gray-50 py-24 text-gray-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -17,30 +17,11 @@ const About = () => {
           </div>
 
           {/* Card */}
-          <div className="mx-auto mt-8 max-w-sm overflow-hidden rounded-xl shadow-lg">
-            <Image className="w-full" src={city} alt="cake" />
-
-            <div className="px-6 py-4">
-              <div className="mb-2 text-xl font-bold">The Coldest Sunset</div>
-              <p className="text-base text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
-            </div>
-
-            <div className="px-6 pt-4 pb-2">
-              <span className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                #adventure
-              </span>
-              <span className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                #travel
-              </span>
-              <span className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                #winter
-              </span>
-            </div>
-          </div>
+          <Card
+            src={city}
+            title="The Coldest Sunset"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ab magnam est soluta laboriosam, magni impedit officia maxime consectetur esse!"
+          />
         </div>
       </div>
     </section>

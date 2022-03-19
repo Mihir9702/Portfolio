@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-50">
       <div className="mx-auto flex max-w-4xl gap-4 overflow-hidden py-10 px-4 text-xs leading-loose text-gray-400 sm:px-6 lg:px-8">

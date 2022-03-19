@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import About from '../src/About'
-import Contact from '../src/Contact'
 import Footer from '../src/Footer'
 import Header from '../src/Header'
+import Resume from '../src/Resume'
+import Projects from '../src/Projects'
+import Contact from '../src/Contact'
 
 const Home: NextPage = () => {
   return (
@@ -16,9 +18,17 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Header />
+
       <About />
+
+      <Projects />
+
+      <Resume />
+
       <Contact />
+
       <Footer />
     </>
   )
