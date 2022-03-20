@@ -14,7 +14,6 @@ const Resume = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quod.
             </p>
           </div>
-          {/* Button */}
           <div className="mx-auto mt-14 max-w-lg flex-grow">
             <Link href={'/'}>
               <a>

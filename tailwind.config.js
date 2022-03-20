@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extends: {
+      fontFamily: {
+        custom: ['Karam', 'cursive'],
+      },
+    },
   },
   plugins: [require('tailwind-scrollbar')],
 }

@@ -10,7 +10,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({ src, title, content }) => {
   return (
-    <div className="mx-auto mt-8 max-w-sm overflow-hidden rounded-xl shadow-lg">
+    <div className="mt-8 max-w-sm overflow-hidden rounded-xl shadow-lg">
       <Image className="w-full" src={src} alt="cake" />
 
       <div className="px-6 py-4">

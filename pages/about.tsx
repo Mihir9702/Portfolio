@@ -1,12 +1,6 @@
 import type { NextPage } from 'next'
-import Navbar from '../src/Navbar'
 
 const About: NextPage = () => {
-  return (
-    <>
-      <Navbar />
-    </>
-  )
+  return <></>
 }
-
 export default About

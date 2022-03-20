@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-50">
+    <footer className="bg-gray-900">
       <div className="mx-auto flex max-w-4xl gap-4 overflow-hidden py-10 px-4 text-xs leading-loose text-gray-400 sm:px-6 lg:px-8">
         <div className="mx-auto flex">
           <div className="flex flex-grow items-center space-x-4">
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
               <a className="transition-all hover:scale-110">
                 <span className="sr-only">GitHub</span>
                 <svg
-                  fill="#000000"
+                  fill="#FFF"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 30 30"
                   className="h-8 w-8"

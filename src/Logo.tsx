@@ -11,11 +11,11 @@ const Logo: React.FC = () => {
         height="60"
         viewBox="0 0 225 225"
         preserveAspectRatio="xMidYMid meet"
-        className="cursor-pointer"
+        className="cursor-pointer rounded-xl hover:animate-spin"
       >
         <g
           transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
-          fill="red"
+          fill="white"
           stroke="none"
         >
           <path d="M0 1125 l0 -1125 1125 0 1125 0 0 1125 0 1125 -1125 0 -1125 0 0 -1125z m1375 880 c120 -35 198 -74 292 -144 231 -172 357 -409 370 -696 15 -329 -136 -623 -414 -808 -284 -189 -686 -194 -977 -13 -142 89 -278 238 -345 381 -137 290 -115 639 56 898 117 176 279 302 470 367 127 42 180 49 328 45 104 -2 148 -8 220 -30z" />

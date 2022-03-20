@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+html {
+  font-family: 'Kalam', cursive;
+}
+
 *::-webkit-scrollbar {
   width: 0.25vw;
   background: none;
@@ -7,19 +17,23 @@
   border-radius: 10px;
 }
 
-.nav-bar {
-  background-color: rgb(25, 33, 41);
+.name {
+  color: transparent;
+  font-weight: 800;
+  background-image: url('../public/bg-gradient.jpg');
+  background-clip: text;
+  background-size: 400px;
+  animation: bg-gradient 3s infinite alternate;
 }
 
-.nav-bar a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-.header {
-  background-image: url(https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg);
-  background-size: auto;
-  min-height: 100%;
-  min-width: 100vw;
+@keyframes bg-gradient {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }

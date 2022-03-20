@@ -6,8 +6,6 @@ import Header from '../src/Home/Header'
 import Resume from '../src/Home/Resume'
 import Projects from '../src/Home/Projects'
 import Contact from '../src/Home/Contact'
-import Link from 'next/link'
-import Navbar from '../src/Navbar'
 
 const Home: NextPage = () => {
   return (
@@ -21,14 +19,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
-
       <Header />
 
       <About />
-      <Link href="/about">
-        <a>About</a>
-      </Link>
 
       <Projects />
 
