@@ -1,6 +1,6 @@
 import React from 'react'
-import city from '../public/city.jpg'
 import Card from './Card'
+import city from '../../public/city.jpg'
 
 const About: React.FC = () => {
   return (
