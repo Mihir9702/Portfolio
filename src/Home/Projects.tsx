@@ -5,7 +5,7 @@ import mycb from '../../public/mycb.png'
 import mt from '../../public/monotrivia.png'
 import jump from '../../public/jump.png'
 
-const About: React.FC = () => {
+const Projects: React.FC = () => {
   return (
     <section className="flex justify-center bg-gray-100 py-24 text-gray-900">
       <div className="max-w-8xl px-4 sm:px-6 md:px-8">
@@ -62,4 +62,4 @@ const About: React.FC = () => {
   )
 }
 
-export default About
+export default Projects

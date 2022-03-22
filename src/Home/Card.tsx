@@ -11,10 +11,12 @@ interface Props {
 
 const Card: React.FC<Props> = ({ src, title, content, tags }) => {
   return (
-    <div className="mt-8 max-w-sm overflow-hidden rounded-xl shadow-lg">
-      <Image className="w-full" src={src} alt="cake" />
+    <div className="card mt-8 flex max-w-sm flex-col items-center justify-evenly overflow-hidden rounded-xl">
+      <div className="absolute top-0">
+        <Image src={src} alt="cake" />
+      </div>
 
-      <div className="px-6 py-4">
+      <div className="mt-48 px-6 py-6">
         <div className="mb-2 text-xl font-bold">{title}</div>
         <p className="text-base text-gray-700">{content}</p>
         <button className="mt-6 w-full rounded-xl bg-gray-800 text-white shadow-md transition-all hover:bg-gray-600">

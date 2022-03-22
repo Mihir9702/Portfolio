@@ -2,8 +2,8 @@ import React from 'react'
 
 const Heading: React.FC = () => {
   return (
-    <>
-      <h1 className="text-5xl leading-tight">
+    <div className="heading">
+      <h1 className="none text-5xl leading-tight">
         <span className="font-semibold">Hello!</span> My name is{' '}
         <span className="name">Mihir Patel</span>
       </h1>
@@ -13,7 +13,7 @@ const Heading: React.FC = () => {
           Full Stack Web Developer
         </em>
       </p>
-    </>
+    </div>
   )
 }
 

@@ -12,7 +12,6 @@ const Header: React.FC = () => {
           <div className="text-center text-gray-300">
             <Heading />
           </div>
-          {/* Image */}
         </div>
       </header>
     </>

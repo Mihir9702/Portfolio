@@ -8,11 +8,12 @@ const InnerContactSectionHeader: React.FC = () => {
       </span>
       <div className="mt-4 mb-5 flex justify-center">
         <span className="text-3xl font-black leading-tight tracking-tight text-gray-900">
-          {'<form>'}
+          Contact Form
         </span>
       </div>
       <p className="text-md text-center leading-7 text-gray-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        If you are an employer hiring entry level developer roles feel free to
+        reach out through email!
       </p>
     </div>
   )
