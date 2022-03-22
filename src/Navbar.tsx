@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Logo from './Logo'
 
 const Navbar = () => {
   const [display, setDisplay] = useState('hidden')
@@ -16,10 +15,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="sticky inset-0 z-10 bg-gray-900 p-5 text-white shadow-md md:inset-auto md:flex md:items-center md:justify-between">
-      <Logo />
-
-      <ul className={`${display} text-center text-xl md:flex md:items-center`}>
+    <nav className="z-10 p-5 py-8 text-white shadow-md md:inset-auto md:flex md:items-center md:justify-end">
+      <ul className={`${display} text-center text-2xl md:flex md:items-center`}>
         <ListLink href="/" text="Home" />
         <ListLink href="/about" text="About" />
         <ListLink href="/projects" text="Projects" />

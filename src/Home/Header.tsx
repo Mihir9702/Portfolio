@@ -1,19 +1,21 @@
 import React from 'react'
 import Heading from './Heading'
-import CallToAction from './CallToAction'
+import background from '../../public/header.svg'
+import Image from 'next/image'
+import Navbar from '../Navbar'
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-gray-800">
-      <div className="mx-auto max-w-7xl overflow-hidden px-4 sm:px-6 lg:px-8">
-        <div className="flex h-24 items-center justify-between" />
-        <div className="m-auto mt-16 text-center text-gray-300">
-          <Heading />
+    <>
+      <header className="header-home bg-gray-800">
+        <div className="min-w-7xl mx-auto flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-gray-300">
+            <Heading />
+          </div>
+          {/* Image */}
         </div>
-        <CallToAction />
-        {/* Image */}
-      </div>
-    </header>
+      </header>
+    </>
   )
 }
 

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import About from '../src/Home/About'
 import Footer from '../src/Home/Footer'
 import Header from '../src/Home/Header'
-import Resume from '../src/Home/Resume'
+import Roadmap from '../src/Home/Roadmap'
 import Projects from '../src/Home/Projects'
 import Contact from '../src/Home/Contact'
 
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
       <Projects />
 
-      <Resume />
+      <Roadmap />
 
       <Contact />
 

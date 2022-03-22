@@ -5,8 +5,8 @@ import CodeLines from './CodeLines'
 const Projects: React.FC = () => {
   return (
     <section className="bg-gray-100 py-24 text-gray-900">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:flex lg:px-8">
-        <div className="mx-auto mt-10 max-w-md md:mt-0">
+      <div className="mx-auto flex  max-w-5xl flex-col items-center justify-center px-4 sm:px-6 md:flex-row lg:px-8">
+        <div className="mt-10 max-w-md md:mt-0">
           <div className="flex flex-col p-2">
             <div>
               <div className="flex flex-col">
@@ -35,20 +35,20 @@ const Projects: React.FC = () => {
                   <CodeLines
                     element="h2"
                     number={4}
-                    text="text-gray-500"
+                    text="text-gray-600"
                     renderText="Web Developer"
                   />
                   <CodeLines
-                    element="div"
+                    element="h3"
                     number={5}
-                    text="text-gray"
-                    renderText="mihirkp7@gmail.com"
+                    text="text-gray-500"
+                    renderText="Game Enthusiast"
                   />
                   <CodeLines
-                    element="div"
+                    element="h3"
                     number={6}
-                    text="text-gray-600"
-                    renderText="(267)-250-3505"
+                    text="text-gray-500"
+                    renderText="Ninja (what?)"
                   />
 
                   {/* Line 7 Div */}
@@ -81,14 +81,14 @@ const Projects: React.FC = () => {
           <h1 className="mt-12 text-4xl font-black leading-tight tracking-tight text-gray-900">
             Mihir Patel
           </h1>
-          <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-500">
+          <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
             Web Developer
           </h2>
           <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-500">
-            mihirkp7@gmail.com
+            Game Enthusiast
           </h2>
           <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-500">
-            (267)-250-3505
+            Professional Ninja
           </h2>
         </div>
       </div>
