@@ -1,99 +1,65 @@
 import React from 'react'
-import CodeLines from './CodeLines'
+import Card from './Card'
+import site from '../../public/site.png'
+import mycb from '../../public/mycb.png'
+import mt from '../../public/monotrivia.png'
+import jump from '../../public/jump.png'
 
-// TODO | Change this lol
-const Projects: React.FC = () => {
+const About: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-24 text-gray-900">
-      <div className="mx-auto flex  max-w-5xl flex-col items-center justify-center px-4 sm:px-6 md:flex-row lg:px-8">
-        <div className="mt-10 max-w-md md:mt-0">
-          <div className="flex flex-col p-2">
-            <div>
-              <div className="flex flex-col">
-                <div className="text-code-white w-max overflow-hidden rounded-lg bg-gray-800 px-5 pb-6 pt-4 font-mono text-sm subpixel-antialiased shadow-lg">
-                  <div className="mb-6 flex">
-                    <span className="h-3 w-3 rounded-full bg-red-500" />
-                    <span className="ml-2 h-3 w-3 rounded-full bg-orange-300" />
-                    <span className="ml-2 h-3 w-3 rounded-full bg-green-500" />
-                  </div>
-                  <CodeLines
-                    element="div"
-                    number={1}
-                    text="bg-gray-700 text-white"
-                  />
-                  <CodeLines
-                    element="div"
-                    number={2}
-                    text="mx-auto px-4 sm:px-6 lg:px-8"
-                  />
-                  <CodeLines
-                    element="h1"
-                    number={3}
-                    text="md:text-6xl"
-                    renderText="Mihir Patel"
-                  />
-                  <CodeLines
-                    element="h2"
-                    number={4}
-                    text="text-gray-600"
-                    renderText="Web Developer"
-                  />
-                  <CodeLines
-                    element="h3"
-                    number={5}
-                    text="text-gray-500"
-                    renderText="Game Enthusiast"
-                  />
-                  <CodeLines
-                    element="h3"
-                    number={6}
-                    text="text-gray-500"
-                    renderText="Ninja (what?)"
-                  />
-
-                  {/* Line 7 Div */}
-                  <div>
-                    <div className="inline-block text-gray-600">
-                      7&nbsp;&nbsp;&nbsp;
-                    </div>
-                    <div className="inline-block text-blue-300">
-                      &nbsp;&nbsp;&nbsp;{'</'}
-                    </div>
-                    <div className="inline-block text-red-400">div</div>
-                    <div className="inline-block text-blue-300">{'>'}</div>
-                  </div>
-
-                  {/* Line 8 Div */}
-                  <div>
-                    <div className="inline-block text-gray-600">8&nbsp;</div>
-                    <div className="inline-block text-blue-300">
-                      &nbsp;{'</'}
-                    </div>
-                    <div className="inline-block text-red-400">div</div>
-                    <div className="inline-block text-blue-300">{'>'}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section className="flex justify-center bg-gray-100 py-24 text-gray-900">
+      <div className="max-w-8xl px-4 sm:px-6 md:px-8">
+        <div className="">
+          <h2 className="text-center text-4xl font-black leading-tight tracking-tight text-gray-900">
+            What does he do?
+          </h2>
         </div>
-        <div className="flex flex-grow flex-col items-center justify-center text-center">
-          <h1 className="mt-12 text-4xl font-black leading-tight tracking-tight text-gray-900">
-            Mihir Patel
-          </h1>
-          <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            Web Developer
-          </h2>
-          <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-500">
-            Game Enthusiast
-          </h2>
-          <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-500">
-            Professional Ninja
-          </h2>
+        <div className="items-center gap-x-20 md:flex">
+          <Card
+            src={site}
+            title="Portfolio"
+            content="Styling this site was super fun and easy using Tailwind! Want to see how I made this site? Check out the code on GitHub!"
+            tags={['TypeScript', 'NextJS', 'TailwindCSS']}
+          />
+          <Card
+            src={mycb}
+            title="MyCookbook"
+            content="Always hungry but never know what to eat? Check out MyCookbook for a variety of recipes and you can make your own personal cookbooks!"
+            tags={[
+              'TypeScript',
+              'React',
+              'Chakra',
+              'SCSS',
+              'MongoDB',
+              'Express',
+              'NodeJS',
+              'JWT',
+            ]}
+          />
+          <Card
+            src={mt}
+            title="MonoTrivia"
+            content="Are you starring on a gameshow tomorrow night or do you just want to see how smart you really are? Check out MonoTrivia! It has questions ranging from easy-hard to improve your skills!"
+            tags={[
+              'JavaScript',
+              'Handlebars',
+              'SASS',
+              'Express',
+              'NodeJS',
+              'MongoDB',
+              'Sessions',
+            ]}
+          />
+          <Card
+            src={jump}
+            title="Jump"
+            content={`"I've played Boshy, I've played Super Mario, I've played everything! Is there anything good out there?" Look no further because we got Jump, a parallax side scrolling platform game!`}
+            tags={['JavaScript', 'Canvas', 'OOP']}
+          />
         </div>
       </div>
     </section>
   )
 }
 
-export default Projects
+export default About

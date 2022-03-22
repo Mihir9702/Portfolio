@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Projects from '../src/Home/Projects'
+import Header from '../src/Home/Header'
+import Skills from '../src/Home/Skills'
 import About from '../src/Home/About'
 import Footer from '../src/Home/Footer'
-import Header from '../src/Home/Header'
-import Roadmap from '../src/Home/Roadmap'
-import Projects from '../src/Home/Projects'
 import Contact from '../src/Home/Contact'
 
 const Home: NextPage = () => {
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
       <Projects />
 
-      <Roadmap />
+      <Skills />
 
       <Contact />
 
