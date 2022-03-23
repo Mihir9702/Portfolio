@@ -11,7 +11,7 @@ const Roadmap = () => {
             <h2 className="text-4xl font-black leading-tight tracking-tight text-gray-900">
               Is he good at anything?
             </h2>
-            <p className="mt-6">I'm always learning something new</p>
+            <p className="mt-6">I&apos;m always learning something new</p>
           </div>
           <div className="mx-auto mt-14 max-w-xl flex-grow">
             <div className="flex flex-col gap-y-20">
