@@ -32,7 +32,6 @@ header {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   min-height: 600px;
-  align-items: center;
 }
 
 .heading {
