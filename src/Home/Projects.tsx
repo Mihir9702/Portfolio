@@ -1,14 +1,9 @@
 import React from 'react'
 import Card from './Card'
-// import site from '../assets/site.png'
-// import mycb from '../assets/mycb.png'
-// import mt from '../assets/monotrivia.png'
-// import jump from '../assets/jump.png'
-// * DEPLOY IMPORTS
-import site from '/vercel/path0/src/Home'
-import mycb from '/vercel/path0/src/Home'
-import mt from '/vercel/path0/src/Home'
-import jump from '/vercel/path0/src/Home'
+import site from '../../assets/site.png'
+import mycb from '../../assets/mycb.png'
+import mt from '../../assets/monotrivia.png'
+import jump from '../../assets/jump.png'
 
 const Projects: React.FC = () => {
   return (
