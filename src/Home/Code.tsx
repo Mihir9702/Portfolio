@@ -45,7 +45,7 @@ const Code = () => {
                 element="h3"
                 number={6}
                 text="text-gray-500"
-                renderText="Resume"
+                renderText="PC Builder"
               />
 
               {/* Line 7 Div */}

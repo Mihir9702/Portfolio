@@ -12,7 +12,9 @@ const AboutSection = () => {
       <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-500">
         Currently residing in Pennsylvania
       </h2>
-      <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-500">Resume</h2>
+      <h2 className="mt-6 max-w-3xl text-lg leading-8 text-gray-500">
+        I like coding and building PCs
+      </h2>
     </div>
   )
 }
