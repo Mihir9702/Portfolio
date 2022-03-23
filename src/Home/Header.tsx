@@ -1,8 +1,5 @@
 import React from 'react'
 import Heading from './Heading'
-import background from '../../public/header.svg'
-import Image from 'next/image'
-import Navbar from '../Navbar'
 
 const Header: React.FC = () => {
   return (

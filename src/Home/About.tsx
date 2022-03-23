@@ -1,5 +1,4 @@
 import React from 'react'
-import useInView from 'react-cool-inview'
 import AboutSection from './AboutSection'
 import Code from './Code'
 

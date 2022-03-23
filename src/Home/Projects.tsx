@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from './Card'
-import site from '../../public/site.png'
-import mycb from '../../public/mycb.png'
-import mt from '../../public/monotrivia.png'
-import jump from '../../public/jump.png'
+import site from '../assets/site.png'
+import mycb from '../assets/mycb.png'
+import mt from '../assets/monotrivia.png'
+import jump from '../assets/jump.png'
 
 const Projects: React.FC = () => {
   return (

@@ -15,8 +15,8 @@ const Roadmap = () => {
           </div>
           <div className="mx-auto mt-14 max-w-xl flex-grow">
             <div className="flex flex-col gap-y-20">
-              {skills.map(skill => (
-                <Skill title={skill.title} skills={skill.skills} />
+              {skills.map((skill, i) => (
+                <Skill key={i} title={skill.title} skills={skill.skills} />
               ))}
             </div>
           </div>

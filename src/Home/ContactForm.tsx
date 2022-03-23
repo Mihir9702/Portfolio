@@ -4,16 +4,10 @@ import emailjs from '@emailjs/browser'
 const ContactForm = () => {
   const sendEmail = (e: any) => {
     e.preventDefault()
-
     emailjs.sendForm('gmail', 'template', e.target, 'Tp8ejTQAjm5S3VyRH').then(
-      result => {
-        console.log(result.text)
-      },
-      error => {
-        console.log(error.text)
-      },
+      result => console.log(result.text),
+      error => console.log(error.text),
     )
-
     e.target.reset()
   }
 
@@ -36,7 +30,7 @@ const ContactForm = () => {
           />
         </div>
 
-        {/* TODO | Submit Button */}
+        {/* Button type='submit' */}
         <div className="my-6 flex justify-center">
           <button
             className="mt-4 inline-block transform rounded-xl bg-gray-900 py-4 px-8 text-center text-lg font-medium text-white shadow-lg transition-all hover:scale-110"

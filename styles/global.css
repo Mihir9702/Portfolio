@@ -23,7 +23,7 @@ html {
   height: 100%;
   overflow: hidden;
   background-size: cover;
-  background-image: url('./header.svg');
+  background-image: url('../src/assets/header.svg');
 }
 
 .card {
@@ -57,7 +57,7 @@ html {
 .name {
   color: transparent;
   font-weight: 800;
-  background-image: url('../public/bg-gradient.jpg');
+  background-image: url('../src/assets/bg-gradient.jpg');
   background-clip: text;
   background-size: 400px;
   animation: bg-gradient 3s infinite alternate;
