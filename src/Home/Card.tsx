@@ -12,8 +12,8 @@ interface Props {
 const Card: React.FC<Props> = ({ src, title, content, tags }) => {
   return (
     <div className="card mt-8 flex max-w-sm flex-col items-center justify-evenly overflow-hidden rounded-xl">
-      <div className="absolute top-0">
-        <Image src={src} alt="cake" />
+      <div className="absolute top-0 w-full">
+        <Image src={src} alt="website" />
       </div>
 
       <div className="mt-48 px-6 py-6">
