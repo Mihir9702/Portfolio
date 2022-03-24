@@ -13,8 +13,8 @@ const Roadmap = () => {
             </h2>
             <p className="mt-6">I&apos;m always learning something new</p>
           </div>
-          <div className="mx-auto mt-14 max-w-xl flex-grow">
-            <div className="flex flex-col gap-y-20">
+          <div className="mx-auto mt-14 max-w-2xl flex-grow">
+            <div className="flex flex-col gap-y-10">
               {skills.map((skill, i) => (
                 <Skill key={i} title={skill.title} skills={skill.skills} />
               ))}

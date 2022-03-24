@@ -13,6 +13,7 @@ import {
   SiHandlebarsdotjs,
   SiJavascript,
   SiMongodb,
+  SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si'
@@ -79,6 +80,10 @@ export const skills = [
       {
         skill: 'React',
         icon: <FaReact />,
+      },
+      {
+        skill: 'NextJS',
+        icon: <SiNextdotjs />,
       },
       {
         skill: 'Express',
