@@ -36,25 +36,6 @@ header {
   min-height: 600px;
 }
 
-.heading {
-  animation: heading 300ms ease 100ms forwards;
-}
-
-@keyframes heading {
-  0% {
-    opacity: 0;
-    margin-top: 4rem;
-  }
-  50% {
-    opacity: 50;
-    margin-top: 2rem;
-  }
-  100% {
-    opacity: 100;
-    margin-top: 0;
-  }
-}
-
 .name {
   color: transparent;
   font-weight: 800;

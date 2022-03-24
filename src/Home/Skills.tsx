@@ -1,8 +1,13 @@
 import React from 'react'
 import Skill from './Skill'
 import { skills } from './SkillList'
+import useInView from 'react-cool-inview'
 
-const Roadmap = () => {
+const Skills = () => {
+  const { observe, inView } = useInView({
+    unobserveOnEnter: true,
+    rootMargin: '100px',
+  })
   return (
     <section className="bg-gray-50 py-24 text-gray-900">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -26,4 +31,4 @@ const Roadmap = () => {
   )
 }
 
-export default Roadmap
+export default Skills
