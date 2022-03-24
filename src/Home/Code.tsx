@@ -3,8 +3,8 @@ import CodeLines from './CodeLines'
 
 const Code = () => {
   return (
-    <div className="mt-10 max-w-md md:mt-0">
-      <div className="flex flex-col p-2">
+    <div className="mt-10 max-w-lg md:mt-0">
+      <div className="flex scale-110 flex-col">
         <div>
           <div className="flex flex-col">
             <div className="text-code-white w-max overflow-hidden rounded-lg bg-gray-800 px-5 pb-6 pt-4 font-mono text-sm subpixel-antialiased shadow-lg">

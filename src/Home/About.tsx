@@ -6,7 +6,7 @@ import Code from './Code'
 const About: React.FC = () => {
   return (
     <section className="bg-gray-50 py-24 text-gray-900">
-      <div className="mx-auto flex  max-w-5xl flex-col items-center justify-center px-4 sm:px-6 md:flex-row lg:px-8">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center px-4 sm:px-6 md:flex-row lg:px-8">
         <Code />
         <AboutSection />
       </div>

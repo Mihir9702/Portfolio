@@ -21,16 +21,20 @@ const Card: React.FC<Props> = ({
   tags,
 }) => {
   return (
-    <div className="card mt-8 flex max-w-sm flex-col justify-center overflow-hidden rounded-xl">
-      <div className="absolute top-0 w-full">
-        <Image src={src} alt="website" />
-      </div>
+    <div className="card relative mt-8 flex max-w-sm flex-col overflow-hidden rounded-xl">
+      <Image src={src} alt="website" />
 
-      <div className="mt-48 px-6 py-6">
-        <div className="mb-2 text-xl font-bold">{title}</div>
+      <div className=" px-6 py-6">
+        <div
+          className={`mb-2 text-xl font-bold ${
+            title !== 'Jump' ? 'mt-6' : 'mt-0'
+          }`}
+        >
+          {title}
+        </div>
         <p
           className={`${
-            title === 'MyCookbook' ? 'pb-4' : 'pb-2'
+            title === 'Portfolio' || title === 'MyCookbook' ? 'pb-10' : 'pb-0'
           } text-base text-gray-700`}
         >
           {content}
@@ -51,7 +55,7 @@ const Card: React.FC<Props> = ({
         </Link>
       </div>
 
-      <div className="px-6 pt-4 pb-2">
+      <div className="px-4 py-4">
         {tags.map(tag => (
           <Tags key={tag} tag={tag} />
         ))}
