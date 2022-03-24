@@ -2,10 +2,10 @@ import React from 'react'
 import useInView from 'react-cool-inview'
 import Cards from './Cards'
 
+// Todo: change animation for mobile devices its too much on the y axis
 const Projects: React.FC = () => {
   const { observe, inView } = useInView({
     unobserveOnEnter: true,
-    rootMargin: '50px',
   })
 
   return (

@@ -15,7 +15,9 @@ const Cards = () => {
     <div
       ref={observe}
       className={`${
-        inView ? 'translate-y-0 opacity-100' : 'translate-y-2/4 opacity-0'
+        inView
+          ? 'lg:translate-y-0 lg:opacity-100'
+          : 'lg:translate-y-2/4 lg:opacity-0'
       } flex flex-col items-center justify-center gap-x-16 transition-all lg:flex-row`}
     >
       <Card
