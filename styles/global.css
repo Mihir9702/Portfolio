@@ -4,8 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 
-html {
+html,
+body {
   font-family: 'Kalam', cursive;
+  overflow: auto;
   overflow-x: hidden;
 }
 
