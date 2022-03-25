@@ -4,15 +4,13 @@
 <h2 align="center">Personal Website</h2>
 
   <p align="center">
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://www.mihirpatel.co"><strong>Visit Site »</strong></a>
   </p>
 </div>
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://mihirpatel.co/_next/static/media/header.57b87b61.svg)
-
-Personal Website I created to display my work and tell you a little bit more about me
+<p align="center">Personal Website I created to display my work and tell you a little bit more about me</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
