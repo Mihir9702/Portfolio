@@ -25,7 +25,7 @@ header {
   height: 100%;
   overflow: hidden;
   background-size: cover;
-  background-image: url('../assets/header.svg');
+  background-image: url('../src/assets/header.svg');
 }
 
 .card {
@@ -39,7 +39,7 @@ header {
 .name {
   color: transparent;
   font-weight: 800;
-  background-image: url('../assets/name.png');
+  background-image: url('../src/assets/name.png');
   background-clip: text;
   background-size: 400px;
   animation: bg-gradient 3s infinite alternate;
