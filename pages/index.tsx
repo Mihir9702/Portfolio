@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Projects from '../src/Home/Projects'
-import Header from '../src/Home/Header'
-import Skills from '../src/Home/Skills'
-import About from '../src/Home/About'
-import Footer from '../src/Home/Footer'
-import Contact from '../src/Home/Contact'
+import Projects from '../src/components/Projects'
+import Header from '../src/components/Header'
+import Skills from '../src/components/Skills'
+import About from '../src/components/About'
+import Footer from '../src/components/Footer'
+import Contact from '../src/components/Contact'
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <title>Mihir Patel</title>
         <meta
           name="description"
-          content="My Portfolio designed to represent my professional work and tell you a little bit more about me."
+          content="My name is Mihir Patel and I am currently a Frontend Developer at Trellus"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
