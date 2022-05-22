@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
           <h2 className="text-center text-4xl font-black leading-tight tracking-tight text-gray-900">
             What does he do?
           </h2>
-          <p className="mx-auto w-max border-b-2 border-b-gray-200 py-4 text-xl text-gray-400">
+          <p className="text-md mx-auto w-max border-b-2 border-b-gray-200 py-4 text-gray-400 md:text-xl">
             I&apos;m currently a Frontend Developer at{' '}
             <Link href={'https://bytrellus.com'}>
               <a className="font-semibold text-gray-600 hover:opacity-80">
@@ -29,11 +29,11 @@ const Projects: React.FC = () => {
               </a>
             </Link>
           </p>
-          <p className="mx-auto mt-4 w-max text-xl text-gray-400">
+          <p className="mx-auto mt-4 w-max text-xs text-gray-400 md:text-xl">
             These are some of my personal projects that I&apos;ve worked on
           </p>
         </div>
-        <div className="mt-6 rounded-lg bg-gray-200 p-8 px-12 pb-12 shadow-sm">
+        <div className="mt-6 rounded-lg bg-gray-200 p-8 px-12 pb-12 shadow-sm md:w-max">
           <Cards />
         </div>
       </div>

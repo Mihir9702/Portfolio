@@ -18,7 +18,7 @@ const Cards = () => {
         inView
           ? 'lg:translate-y-0 lg:opacity-100'
           : 'lg:translate-y-2/4 lg:opacity-0'
-      } flex flex-col items-center justify-center gap-x-16 transition-all lg:flex-row`}
+      } flex flex-col items-center justify-center gap-x-16 text-lg transition-all lg:flex-row`}
     >
       <Card
         project={'/'}
