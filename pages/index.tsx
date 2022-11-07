@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <title>Mihir Patel</title>
         <meta
           name="description"
-          content="My name is Mihir Patel and I am currently a Frontend Developer at Trellus"
+          content="My name is Mihir Patel and I am currently a Frontend Developer"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
