@@ -6,6 +6,8 @@ import mycb from '../assets/mycb.png'
 import mt from '../assets/monotrivia.png'
 import jump from '../assets/jump.png'
 
+// todo: update cards
+
 const Cards = () => {
   const { observe, inView } = useInView({
     unobserveOnEnter: true,
