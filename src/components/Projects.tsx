@@ -22,12 +22,10 @@ const Projects: React.FC = () => {
             What does he do?
           </h2>
           <p className="mx-auto mt-4 w-max text-xs text-gray-400 md:text-xl">
-            These are some of my personal projects that I&apos;ve worked on
+            These are some of the technical projects I have worked on!
           </p>
         </div>
-        <div className="mt-6 rounded-lg bg-gray-200 p-8 px-12 pb-12 shadow-sm md:w-max">
-          <Cards />
-        </div>
+        <Cards />
       </div>
     </section>
   )

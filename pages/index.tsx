@@ -20,15 +20,10 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-
       <About />
-
       <Projects />
-
       <Skills />
-
       <Contact />
-
       <Footer />
     </>
   )

@@ -22,36 +22,25 @@ const Card: React.FC<Props> = ({
 }) => {
   return (
     <div className="card relative mt-8 flex max-w-sm flex-col overflow-hidden rounded-xl">
-      <Image src={src} alt="website" />
+      <Image src={src} alt="website" className="h-64" />
 
-      <div className=" px-6 py-6">
-        <div
-          className={`mb-2 text-xl font-bold ${
-            title !== 'Jump' ? 'mt-6' : 'mt-0'
-          }`}
+      <div className="px-6">
+        <div className="mt-4 mb-2 text-xl font-bold">{title}</div>
+        <p className="h-24 text-base text-gray-700">{content}</p>
+      </div>
+
+      <div className="flex justify-around my-3">
+        <Link
+          href={project}
+          className="w-fit rounded-xl bg-gray-800 px-4 text-white shadow-md transition-all hover:bg-gray-600"
         >
-          {title}
-        </div>
-        <p
-          className={`${
-            title === 'Portfolio' || title === 'MyCookbook' ? 'pb-10' : 'pb-0'
-          } text-base text-gray-700`}
-        >
-          {content}
-        </p>
-        <Link href={project}>
-          <a>
-            <button className="mt-6 w-full rounded-xl bg-gray-800 text-white shadow-md transition-all hover:bg-gray-600">
-              Website
-            </button>
-          </a>
+          Website
         </Link>
-        <Link href={github}>
-          <a>
-            <button className="mt-6 w-full rounded-xl bg-gray-800 text-white shadow-md transition-all hover:bg-gray-600">
-              Source Code
-            </button>
-          </a>
+        <Link
+          href={github}
+          className="w-fit rounded-xl bg-gray-800 px-4 text-white shadow-md transition-all hover:bg-gray-600"
+        >
+          Source Code
         </Link>
       </div>
 

@@ -1,30 +1,42 @@
 import React from 'react'
 import {
+  FaAws,
   FaBootstrap,
   FaCss3,
+  FaFigma,
   FaHtml5,
+  FaJava,
   FaNodeJs,
   FaPython,
   FaReact,
   FaSass,
 } from 'react-icons/fa'
+import { BsFiletypeSql } from 'react-icons/bs'
 import {
   SiApollographql,
+  SiAsana,
   SiChakraui,
+  SiDjango,
   SiDocker,
   SiElectron,
   SiExpress,
+  SiFigma,
+  SiFirebase,
   SiGit,
   SiGraphql,
   SiHandlebarsdotjs,
   SiJavascript,
+  SiJira,
   SiMongodb,
   SiNextdotjs,
   SiPostgresql,
   SiRedis,
+  SiSequelize,
+  SiSpring,
   SiTailwindcss,
   SiTypescript,
   SiVim,
+  SiVuedotjs,
 } from 'react-icons/si'
 
 export const skills = [
@@ -43,18 +55,26 @@ export const skills = [
         skill: 'Python',
         icon: <FaPython />,
       },
+      {
+        skill: 'Java',
+        icon: <FaJava />
+      },
+      {
+        skill: "SQL",
+        icon: <BsFiletypeSql />
+      }
     ],
   },
   {
     title: 'Frontend',
     skills: [
       {
-        skill: 'HTML5',
-        icon: <FaHtml5 />,
-      },
-      {
         skill: 'React',
         icon: <FaReact />,
+      },
+      {
+        skill: 'Vue',
+        icon: <SiVuedotjs />,
       },
       {
         skill: 'NextJS',
@@ -65,33 +85,8 @@ export const skills = [
         icon: <SiElectron />,
       },
       {
-        skill: 'Handlebars',
-        icon: <SiHandlebarsdotjs />,
-      },
-    ],
-  },
-  {
-    title: 'CSS',
-    skills: [
-      {
-        skill: 'CSS3',
-        icon: <FaCss3 />,
-      },
-      {
-        skill: 'Sass',
-        icon: <FaSass />,
-      },
-      {
-        skill: 'Chakra',
-        icon: <SiChakraui />,
-      },
-      {
         skill: 'Tailwind',
         icon: <SiTailwindcss />,
-      },
-      {
-        skill: 'Bootstrap',
-        icon: <FaBootstrap />,
       },
     ],
   },
@@ -99,13 +94,30 @@ export const skills = [
     title: 'Backend',
     skills: [
       {
-        skill: 'Express',
-        icon: <SiExpress />,
-      },
-      {
         skill: 'NodeJS',
         icon: <FaNodeJs />,
       },
+      {
+        skill: 'Spring',
+        icon: <SiSpring />
+      },
+      {
+        skill: 'Django',
+        icon: <SiDjango />
+      },
+      {
+        skill: 'GraphQL',
+        icon: <SiGraphql />,
+      },
+      {
+        skill: 'AWS',
+        icon: <FaAws />,
+      },
+    ],
+  },
+  {
+    title: 'Database',
+    skills: [
       {
         skill: 'PostgreSQL',
         icon: <SiPostgresql />,
@@ -118,22 +130,26 @@ export const skills = [
         skill: 'MongoDB',
         icon: <SiMongodb />,
       },
-    ],
+      {
+        skill: 'Firebase',
+        icon: <SiFirebase />
+      }
+    ]
   },
   {
     title: 'Other',
     skills: [
       {
-        skill: 'GraphQL',
-        icon: <SiGraphql />,
-      },
-      {
-        skill: 'Apollo',
-        icon: <SiApollographql />,
-      },
-      {
         skill: 'Docker',
         icon: <SiDocker />,
+      },
+      {
+        skill: 'Asana',
+        icon: <SiAsana />
+      },
+      {
+        skill: 'Figma',
+        icon: <SiFigma />
       },
       {
         skill: 'Git',

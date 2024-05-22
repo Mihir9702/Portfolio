@@ -12,8 +12,8 @@ const InnerContactSectionHeader: React.FC = () => {
         </span>
       </div>
       <p className="text-md text-center leading-7 text-gray-500">
-        If you are an employer hiring entry level developer roles feel free to
-        reach out through email!
+        If you are an employer looking to hire an experienced software developer,
+        reach out via email!
       </p>
     </div>
   )

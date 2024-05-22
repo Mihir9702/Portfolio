@@ -16,7 +16,7 @@ const About: React.FC = () => {
         className={`${
           inView ? 'translate-y-0 opacity-100' : 'translate-y-2/4 opacity-0'
         } 
-         mx-auto flex max-w-5xl flex-col items-center justify-center px-4 transition-all sm:px-6 md:flex-row lg:px-8`}
+         mx-auto flex max-w-5xl md:gap-24 flex-col items-center justify-center px-4 transition-all sm:px-6 md:flex-row md:items-end lg:px-8`}
       >
         <Code />
         <AboutSection />

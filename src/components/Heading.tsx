@@ -19,7 +19,7 @@ const Heading: React.FC = () => {
       <p className="mt-6 text-2xl">
         and I&apos;m a{' '}
         <em className="rounded-lg border-b-2 border-b-gray-200 text-3xl">
-          Frontend Developer
+          Software Developer
         </em>
       </p>
     </div>
