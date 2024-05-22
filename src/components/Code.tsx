@@ -7,7 +7,7 @@ const Code = () => {
       <div className="flex scale-75 flex-col md:scale-100">
         <div>
           <div className="flex flex-col">
-            <div className="text-code-white w-max overflow-hidden rounded-lg bg-gray-800 px-5 pb-6 pt-4 font-mono text-sm subpixel-antialiased shadow-lg">
+            <div className="text-code-white w-fit md:w-max overflow-hidden rounded-lg bg-gray-800 px-5 pb-6 pt-4 font-mono text-sm subpixel-antialiased shadow-lg">
               <div className="mb-6 flex">
                 <span className="h-3 w-3 rounded-full bg-red-500" />
                 <span className="ml-2 h-3 w-3 rounded-full bg-orange-300" />
@@ -33,7 +33,7 @@ const Code = () => {
                 element="h2"
                 number={4}
                 text="text-gray-600"
-                renderText="Web Developer"
+                renderText="Software Developer"
               />
               <CodeLines
                 element="h3"
@@ -45,7 +45,7 @@ const Code = () => {
                 element="h3"
                 number={6}
                 text="text-gray-500"
-                renderText="React + TypeScript"
+                renderText="Java / Python / JavaScript"
               />
 
               {/* Line 7 Div */}

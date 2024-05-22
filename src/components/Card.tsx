@@ -26,10 +26,10 @@ const Card: React.FC<Props> = ({
 
       <div className="px-6">
         <div className="mt-4 mb-2 text-xl font-bold">{title}</div>
-        <p className="h-24 text-base text-gray-700">{content}</p>
+        <p className="md:h-24 text-base text-gray-700">{content}</p>
       </div>
 
-      <div className="flex justify-around my-3">
+      <div className="flex flex-col justify-around my-3 mx-auto gap-2 md:mx-0 md:gap-0 md:flex-row md:row">
         <Link
           href={project}
           className="w-fit rounded-xl bg-gray-800 px-4 text-white shadow-md transition-all hover:bg-gray-600"

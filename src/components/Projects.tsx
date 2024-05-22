@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
           <h2 className="text-center text-4xl font-black leading-tight tracking-tight text-gray-900">
             What does he do?
           </h2>
-          <p className="mx-auto mt-4 w-max text-xs text-gray-400 md:text-xl">
+          <p className="mx-auto mt-4 text-md text-gray-400 md:text-xl md:w-max">
             These are some of the technical projects I have worked on!
           </p>
         </div>

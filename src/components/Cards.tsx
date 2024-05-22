@@ -23,7 +23,7 @@ const Cards = () => {
           inView
             ? 'lg:translate-y-0 lg:opacity-100'
             : 'lg:translate-y-2/4 lg:opacity-0'
-        } grid grid-cols-3 gap-8`}
+        } grid md:grid-cols-3 gap-8`}
       >
         <Card
           project={'https://kpam-eng.vercel.app/'}
